@@ -40,7 +40,7 @@ class GchAPI
       $this -> IsBanned = (int)$xml -> isbanned;
       $this -> IsF2P = (int)$xml -> isf2p;
       $this -> TradeStatus = (int)$xml -> istrbanned;
-		$this -> IsPremium = (int)$xml -> ispremium;
+      $this -> IsPremium = (int)$xml -> ispremium;
       $this -> Permalink = (string)$xml -> permalink;
     }
     else
