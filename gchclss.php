@@ -21,6 +21,7 @@ class GchAPI
   public $IsBanned;
   public $IsF2P;
   public $TradeStatus;
+  public $IsPremium;
   public $Permalink;
   
   function __construct($user, $IsSSL = true)
@@ -39,6 +40,7 @@ class GchAPI
       $this -> IsBanned = (int)$xml -> isbanned;
       $this -> IsF2P = (int)$xml -> isf2p;
       $this -> TradeStatus = (int)$xml -> istrbanned;
+		$this -> IsPremium = (int)$xml -> ispremium;
       $this -> Permalink = (string)$xml -> permalink;
     }
     else
