@@ -24,7 +24,7 @@ class GchAPI
   public $IsPremium;
   public $Permalink;
   
-  function __construct($user, $IsSSL = true)
+  function __construct($user, $IsSSL = false)
   {
     $AURI = sprintf(self::URI, $IsSSL ? "http" : "https", self::Token, $user);
     if ($xml = simplexml_load_file($AURI))
